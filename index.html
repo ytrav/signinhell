@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Please Sign In</title>
+</head>
+
+<body>
+    <h1>User verification.</h1>
+    <h2 title="not actually lmao, we are happy to see you suffer">We are sorry to see you go</h2>
+    <h3>To cancel your subscription, please verify you're not a robot by entering the symbols you see on the image, using the keyboard provided to you below.</h3>
+    <h3>Warning: You have a maximum of <span style="font-style: italic;">one</span> tries left before your account will be frozen for security reasons. You will then have to contact our support to get back into your account. But hurry, all of our development team goes on vacation from <span id="date"></span> until next year.</h3>
+
+
+    <div id="captcha"><img src="assets/captcha1.png" alt="a captcha" title="yeah, we like when you do that -- facebook, i mean meta, yeah"><div id="field">test</div><button onclick="start()" id="butt">Start</button></div>
+
+    <div id="keyboard">
+        <div class="keyboard">
+            <div onclick="press(q)" class="q">q</div>
+            <div onclick="press(a)" class="a">a</div>
+            <div onclick="press(z)" class="z">z</div>
+            <div onclick="press(r)" class="r">r</div>
+            <div onclick="press(f)" class="f">f</div>
+            <div onclick="press(v)" class="v">v</div>
+            <div onclick="press(b)" class="b">b</div>
+            <div onclick="press(y)" class="y">y</div>
+            <div onclick="press(h)" class="h">h</div>
+            <div onclick="press(n)" class="n">n</div>
+            <div onclick="press(u)" class="u">u</div>
+            <div onclick="press(j)" class="j">j</div>
+            <div onclick="press(m)" class="m">m</div>
+            <div onclick="press(i)" class="i">i</div>
+            <div onclick="press(k)" class="k">k</div>
+            <div onclick="press(o)" class="o">o</div>
+            <div onclick="press(l)" class="l">l</div>
+            <div onclick="press(p)" class="p">p</div>
+            <div onclick="press(w)" class="w">w</div>
+            <div onclick="press(s)" class="s">s</div>
+            <div onclick="press(x)" class="x">x</div>
+            <div onclick="press(e)" class="e">e</div>
+            <div onclick="press(d)" class="d">d</div>
+            <div onclick="press(c)" class="c">c</div>
+        </div>
+        <div class="numbers">
+            <div onclick="press(seven)" class="\\7">7</div>
+            <div onclick="press(four)" class="\\4">4</div>
+            <div onclick="press(one)" class="\\1">1</div>
+            <div onclick="press(two)" class="\\2">2</div>
+            <div onclick="press(eight)" class="\\8">8</div>
+            <div onclick="press(five)" class="\\5">5</div>
+            <div onclick="press(nine)" class="\\9">9</div>
+            <div onclick="press(six)" class="\\6">6</div>
+            <div onclick="press(three)" class="\\3">3</div>
+            <div onclick="press(q)" class="\*">*</div>
+            <div onclick="press(zero)" class="\\0">0</div>
+            <div onclick="press(a)" class="\\\#">#</div>
+          </div>
+    </div>
+
+    <p style="color: gray;">made with love by ytrav, u/Withertrav394 for r/baduibattles</p>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+h2,
+h3 {
+    color: #22223b;
+}
+
+html {
+    background-color: #f2e9e4;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+#captcha {
+    background-color: #c9ada7;
+    padding: 10px;
+    color: #f2e9e4;
+    width: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px 50px 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#field {
+    background-color: #f2e9e4;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    display: none;
+    color: #22223b;
+    font-size: 1.4em;
+    text-align: left;
+    padding: 0 10px 0 10px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #f2e9e4;
+    color: #22223b;
+}
+
+button:hover {
+    background-color: #22223b;
+    color: #f2e9e4;
+    cursor: pointer;
+}
+
+/* torture section */
+
+.torture {
+    animation-name: keyboard;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.torture div {
+    animation-name: keyboard;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+#keyboard {
+    background-color: #c9ada7;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#keyboard div {
+    width: 45%;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 50px 50px;
+    margin-right: 100px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "q a z r f v"
+        "b y h n u j"
+        "m i k o l p"
+        "w s x e d c";
+}
+
+.keyboard div {
+    background-color: #f2e9e4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.numbers div {
+    background-color: #f2e9e4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.numbers div:hover,
+.keyboard div:hover {
+    color: #f2e9e4;
+    background-color: #22223b;
+    cursor: pointer;
+}
+
+.q {
+    grid-area: q;
+}
+
+.a {
+    grid-area: a;
+}
+
+.z {
+    grid-area: z;
+}
+
+.r {
+    grid-area: r;
+}
+
+.f {
+    grid-area: f;
+}
+
+.v {
+    grid-area: v;
+}
+
+.b {
+    grid-area: b;
+}
+
+.y {
+    grid-area: y;
+}
+
+.h {
+    grid-area: h;
+}
+
+.n {
+    grid-area: n;
+}
+
+.u {
+    grid-area: u;
+}
+
+.j {
+    grid-area: j;
+}
+
+.m {
+    grid-area: m;
+}
+
+.i {
+    grid-area: i;
+}
+
+.k {
+    grid-area: k;
+}
+
+.o {
+    grid-area: o;
+}
+
+.l {
+    grid-area: l;
+}
+
+.p {
+    grid-area: p;
+}
+
+.w {
+    grid-area: w;
+}
+
+.s {
+    grid-area: s;
+}
+
+.x {
+    grid-area: x;
+}
+
+.e {
+    grid-area: e;
+}
+
+.d {
+    grid-area: d;
+}
+
+.c {
+    grid-area: c;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 50px 50px;
+    margin-left: 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "\\7 \\4 \\1""\\2 \\8 \\5""\\9 \\6 \\3""\\0 \* \\\#";
+}
+
+.\\7 {
+    grid-area: \\7;
+}
+
+.\\4 {
+    grid-area: \\4;
+}
+
+.\\1 {
+    grid-area: \\1;
+}
+
+.\\2 {
+    grid-area: \\2;
+}
+
+.\\8 {
+    grid-area: \\8;
+}
+
+.\\5 {
+    grid-area: \\5;
+}
+
+.\\9 {
+    grid-area: \\9;
+}
+
+.\\6 {
+    grid-area: \\6;
+}
+
+.\\3 {
+    grid-area: \\3;
+}
+
+.\* {
+    grid-area: \*;
+}
+
+.\\0 {
+    grid-area: \\0;
+}
+
+.\\\# {
+    grid-area: \\\#;
+}
+
+@media only screen and (orientation: portrait) {
+    #keyboard {
+        flex-wrap: wrap;
+    }
+}
+
+@keyframes keyboard {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
