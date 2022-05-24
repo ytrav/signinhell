@@ -4,25 +4,25 @@ var today = new Date();
 var dd = String(today.getDate() - 1).padStart(2, '0');
 console.log(dd);
 switch (dd) {
-    case 01:
+    case "01":
         dd = "1st";
         break;
-    case 02:
+    case "02":
         dd = "2nd";
         break;
-    case 03:
+    case "03":
         dd = "3rd";
         break;
-    case 21:
+    case "21":
         dd = "21st";
         break;
-    case 22:
+    case "22":
         dd = "22nd";
         break;
-    case 23:
+    case "23":
         dd = "23rd";
         break;
-    case 31:
+    case "31":
         dd = "31st";
         break;
     default:
