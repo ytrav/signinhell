@@ -128,8 +128,8 @@ var hash = "#";
 function start() {
     document.getElementById("field").style.display = "block";
     document.getElementById("butt").style.display = "none";
-    // document.getElementById("kb").classList.add("torture");
-    // document.getElementById("nb").classList.add("torture");
+    document.getElementById("kb").classList.add("torture");
+    document.getElementById("nb").classList.add("torture");
     hasStarted = true;
 
 };
