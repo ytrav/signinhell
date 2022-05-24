@@ -136,6 +136,11 @@ button:hover {
     cursor: pointer;
 }
 
+#wrong {
+    color: rgb(194, 0, 0);
+    display: none;
+}
+
 .q {
     grid-area: q;
 }

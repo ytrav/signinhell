@@ -15,14 +15,26 @@
 <body>
     <h1>User verification.</h1>
     <h2 title="not actually lmao, we are happy to see you suffer">We are sorry to see you go</h2>
-    <h3>To cancel your subscription, please verify you're not a robot by entering the symbols you see on the image, using the keyboard provided to you below.</h3>
-    <h3>Warning: You have a maximum of <span style="font-style: italic;">one</span> tries left before your account will be frozen for security reasons. You will then have to contact our support to get back into your account. But hurry, all of our development team goes on vacation from <span id="date"></span> until next year.</h3>
+    <h3>To cancel your subscription, please verify you're not a robot by entering the symbols you see on the image,
+        using the keyboard provided to you below. (case insensitive because i was too lazy to make that)</h3>
+    <h3 id="warning">Warning: You have a maximum of <span style="font-style: italic;">one</span> tries left before your
+        account will
+        be frozen for security reasons. You will then have to contact our support to get back into your account.
+    </h3>
+    <h3 id="wrong">Unfortunately, you have failed to enter the captcha and thus, we cannot verify you are indeed a human. You have
+        run out of tries, please contact our support team</h3>
+    <h3>But
+        hurry, all of our development and support team goes on vacation from <span id="date"></span> until the year <span
+            id="year"></span>.</h3>
 
 
-    <div id="captcha"><img src="assets/captcha1.png" alt="a captcha" title="yeah, we like when you do that -- facebook, i mean meta, yeah"><div id="field">test</div><button onclick="start()" id="butt">Start</button></div>
+    <div id="captcha"><img id="img" src="assets/captcha1.png" alt="a captcha"
+            title="yeah, we like when you do that -- facebook, i mean meta, yeah">
+        <div id="field">enter text here</div><button onclick="start()" id="butt">Start</button>
+    </div>
 
     <div id="keyboard">
-        <div class="keyboard">
+        <div id="kb" class="keyboard">
             <div onclick="press(q)" class="q">q</div>
             <div onclick="press(a)" class="a">a</div>
             <div onclick="press(z)" class="z">z</div>
@@ -46,9 +58,9 @@
             <div onclick="press(x)" class="x">x</div>
             <div onclick="press(e)" class="e">e</div>
             <div onclick="press(d)" class="d">d</div>
-            <div onclick="press(c)" class="c">c</div>
+            <div onclick="press(t)" class="c">t</div>
         </div>
-        <div class="numbers">
+        <div id="nb" class="numbers">
             <div onclick="press(seven)" class="\\7">7</div>
             <div onclick="press(four)" class="\\4">4</div>
             <div onclick="press(one)" class="\\1">1</div>
@@ -58,13 +70,13 @@
             <div onclick="press(nine)" class="\\9">9</div>
             <div onclick="press(six)" class="\\6">6</div>
             <div onclick="press(three)" class="\\3">3</div>
-            <div onclick="press(q)" class="\*">*</div>
+            <div onclick="press(asterisk)" class="\*">*</div>
             <div onclick="press(zero)" class="\\0">0</div>
-            <div onclick="press(a)" class="\\\#">#</div>
-          </div>
+            <div onclick="press(hash)" class="\\\#">#</div>
+        </div>
     </div>
 
-    <p style="color: gray;">made with love by ytrav, u/Withertrav394 for r/baduibattles</p>
+    <p style="color: gray;">made with love by ytrav (u/Withertrav394) for r/baduibattles</p>
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        button {
+            background-color: #c9ada7;
+        }
+    </style>
+    <title>Congratulations!</title>
+</head>
+
+<body>
+    <h1>Congratulations!</h1>
+    <h2>Verification complete</h2>
+    <h3>To unsubscribe, please call the number below.</h3>
+    <p id="number">28190391884139876</p> <span style="font-style: italic;">(calling is a paid service and the funds will
+        be charged from your card currently
+        added to your account)
+    </span>
+
+    <h4>Liked the experience? Please comment about in under my reddit post, criticism welcome.
+    </h4>
+    <button onclick="again()">Play Again</button>
+    <button onclick="window.open('https://github.com/ytrav/signinhell');">Github</button>
+    <button onclick="window.open('https://www.reddit.com/');">Reddit Post</button>
+    <p style="color: gray;">made with love by ytrav (u/Withertrav394) for r/baduibattles</p>
+    <script>
+        function num() {
+            var numbe = Math.random();
+            numbe = numbe.toString();
+            numbe = numbe.substring(2);
+            document.getElementById("number").innerHTML = numbe;
+        }
+        setInterval(num, 400);
+        function check() {
+            if (localStorage.getItem("success") != "true") {
+                window.open("index.html", "_self");
+                return;
+            } else {
+                return;
+            }
+        }
+        check();
+        function again() {
+            localStorage.removeItem("success");
+            window.open("index.html", "_self");
+        }
+    </script>
+</body>
+
+</html>
